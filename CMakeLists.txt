@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.8)
+project (final)
+set(CMAKE_CXX_FLAGS "-std=c++11 -g -O3 -Wall -Wextra -Wpedantic -Werror -pthread")
+add_executable(final final.cc)
+target_link_libraries(final -lev -pthread)
